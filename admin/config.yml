@@ -5,8 +5,8 @@ backend:
 local_backend: false
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-site_url: "https://YOUR-SITE-NAME.netlify.app"
-display_url: "https://YOUR-SITE-NAME.netlify.app"
+site_url: "https://polite-dolphin-77c2b1.netlify.app"
+display_url: "https://polite-dolphin-77c2b1.netlify.app"
 logo_url: "/assets/brims-logo.svg"
 
 publish_mode: simple
