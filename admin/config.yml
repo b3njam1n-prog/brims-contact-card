@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: false
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+site_url: "https://YOUR-SITE-NAME.netlify.app"
+display_url: "https://YOUR-SITE-NAME.netlify.app"
+logo_url: "/assets/brims-logo.svg"
+
+publish_mode: simple
+collections:
+  - name: "site_settings"
+    label: "Contact card details"
+    files:
+      - name: "contact"
+        label: "BRIMS contact information"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Organisation name", name: "name", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Telephone display format", name: "phoneDisplay", widget: "string", hint: "Example: +256 772 446 323" }
+          - { label: "Telephone international format", name: "phoneE164", widget: "string", hint: "Example: +256772446323" }
+          - { label: "Website", name: "website", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "X / Twitter profile URL", name: "socialX", widget: "string" }
+  - name: "events"
+    label: "Featured event"
+    files:
+      - name: "featured_event"
+        label: "Upcoming BRIMS appearance"
+        file: "content/event.json"
+        format: "json"
+        fields:
+          - { label: "Publish event", name: "published", widget: "boolean", default: false, hint: "Turn on only after details are confirmed." }
+          - { label: "Event title", name: "title", widget: "string", required: false }
+          - { label: "Event category", name: "category", widget: "string", default: "Upcoming appearance", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Start date and time", name: "start", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm", required: false, hint: "Enter the actual event start time. The site displays it in East Africa Time." }
+          - { label: "End date and time", name: "end", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ", date_format: "YYYY-MM-DD", time_format: "HH:mm", required: false }
+          - { label: "Timezone", name: "timezone", widget: "hidden", default: "Africa/Kampala" }
+          - { label: "Venue", name: "venue", widget: "string", required: false }
+          - { label: "Full address", name: "address", widget: "string", required: false }
+          - { label: "Event or booking URL", name: "url", widget: "string", required: false }
