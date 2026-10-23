@@ -1,12 +1,12 @@
 {
-  "published": false,
-  "title": "",
-  "category": "Upcoming appearance",
-  "description": "",
-  "start": "",
-  "end": "",
-  "timezone": "Africa/Kampala",
-  "venue": "",
+  "start": "2026-11-01T14:00:00+03:00",
+  "published": true,
+  "url": "",
+  "venue": "Brims Heritage Resource Centre",
   "address": "",
-  "url": ""
+  "title": "Rotary Hospitality",
+  "timezone": "Africa/Kampala",
+  "end": "2026-11-01T18:00:00+03:00",
+  "description": "We shall host Rotarians from the Rotary Club of Mengo",
+  "category": "Upcoming appearance"
 }
